@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 20)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 
-add_executable(OS main.cpp Drawable.hpp Drawable.cpp Application.hpp Application.cpp OS.cpp)
+add_executable(OS main.cpp API.cpp API.hpp)
 target_link_libraries(OS sfml-graphics sfml-audio)
